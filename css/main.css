@@ -607,7 +607,7 @@ footer .copyright {
 
 .list_table.upload_file_list table tr th:nth-child(2),
 .list_table.upload_file_list table tr td:nth-child(2) {
-    width: calc(100% - 630px);
+    width: calc(100% - 640px);
     word-wrap: break-word;
     word-break: break-all;
 }
@@ -629,7 +629,7 @@ footer .copyright {
 
 .list_table.upload_file_list table tr th:last-child,
 .list_table.upload_file_list table tr td:last-child {
-    width: 200px;
+    width: 210px;
 }
 
 
