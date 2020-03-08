@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icon/web-ico.png">
+    <meta name=”description” content="讓行動裝置蒐集證據更方便、更快速，區塊鏈技術讓數位證據更可靠。">
+    <title>區塊鏈存證王 Blockchain Witness</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/slider_style.css" rel="stylesheet">
+    <script src="script/jquery-1.10.2.min.js"></script>
+    <script src="script/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/jquery.ui.touch-punch.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/main.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container-fluid">
+                <a href="index.html" class="brand_logo pull-left"></a>
+                <button type="button" class="btn btn_style3 btn_menu visible-xs">
+                    <div class="icon_menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                </button>
+                <ul class="nav_list pull-left hidden-xs" style="display:none;">
+                    <!-- 登入後隱藏 -->
+                    <li><a href="intro_page_app.html" class="btn">個人版</a></li>
+                    <li><a href="intro_page_browser_kit.html" class="btn">企業版</a></li>
+                    <li><a href="download.html" class="btn">下載</a></li>
+                    <li><a href="block_chain_view.html" class="btn">區塊鏈即時數據</a></li>
+                </ul>
+                <ul class="nav_list pull-left hidden-xs">
+                    <!-- 登入後才顯示 -->
+                    <li><a href="uploaded_file.html" class="btn">已上傳檔案</a></li>
+                    <li><a href="verification_file.html" class="btn">驗證檔案</a></li>
+                    <li><a href="verification_record.html" class="btn">驗證紀錄</a></li>
+                </ul>
+                <ul class="nav_list pull-right hidden-xs" style="display:none;">
+                    <!-- 登入後隱藏 -->
+                    <li><a href="registered.html" class="btn">個人註冊</a></li>
+                    <li><a href="business_application_step1.html" class="btn">企業申請</a></li>
+                    <li><a href="login.html" class="btn">登入</a></li>
+                </ul>
+                <ul class="nav_list pull-right hidden-xs">
+                    <!-- 登入後才顯示 -->
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">王大明 <span class="caret"></span></button>
+                            <ul class="dropdown-menu account_menu" role="menu">
+                                <li>
+                                    <div class="storage_status_box">
+                                        <div class="box_title">
+                                            空間使用度：50%
+                                            <div class="member_level level_free pull-right">FREE</div>
+                                            <!-- 以下為其他用戶等級樣式 -->
+                                            <!-- <div class="member_level level_standard">STANDARD</div>
+                                            <div class="member_level level_pro">PRO</div> -->
+                                        </div>
+                                        <div class="box_content">
+                                            <div class="status_bar">
+                                                <!-- 10%以下使用status_low -->
+                                                <!-- <div class="bar_content status_low" style="width:10%;"></div> -->
+                                                <!-- 11-99%使用status_medium -->
+                                                <div class="bar_content status_medium" style="width:50%;"></div>
+                                                <!-- 100%使用status_height -->
+                                                <!-- <div class="bar_content status_height" style="width:100%;"></div> -->
+                                            </div>
+                                            <div class="bar_info">
+                                                0.5G / 1G
+                                                <span class="deadline">2020/05/24 23:59到期</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="setting.html">設定</a></li>
+                                <li><a href="change_password.html">重設密碼</a></li>
+                                <li><a href="account_level.html">升級 / 續用</a></li>
+                                <li><a href="reward_record.html">獎勵空間</a></li>
+                                <li><a href="" data-toggle="modal" data-target="#LogoutComfirm">登出</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobile menu -->
+            <div class="menu visible-xs">
+                <div class="menu_top">
+                    <div class="login_title">Hi, 王大明</div>
+                    <!--login_title 已登入才顯示-->
+                    <button type="button" class="btn btn_style3 btn_close_menu"><span class="glyphicon glyphicon-chevron-right"></span></button>
+                </div>
+                <div class="menu_content" style="display:none">
+                    <ul class="menu_list">
+                        <li><a href="login.html">登入</a></li>
+                        <li><a href="registered.html">個人註冊</a></li>
+                        <li><a href="business_application_step1.html">企業申請</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="intro_page_app.html">個人版</a></li>
+                        <li><a href="intro_page_browser_kit.html">企業版</a></li>
+                        <li><a href="download.html">下載</a></li>
+                        <li><a href="block_chain_view.html">區塊鏈即時數據</a></li>
+                    </ul>
+                </div>
+                <!--main_list 未登入時顯示-->
+                <div class="menu_content">
+                    <div class="storage_status_box">
+                        <div class="box_title">
+                            空間使用度：50%
+                            <div class="member_level level_free pull-right">FREE</div>
+                            <!-- 以下為其他用戶等級樣式 -->
+                            <!-- <div class="member_level level_standard">STANDARD</div>
+                            <div class="member_level level_pro">PRO</div> -->
+                        </div>
+                        <div class="box_content">
+                            <div class="status_bar">
+                                <!-- 10%以下使用status_low -->
+                                <!-- <div class="bar_content status_low" style="width:10%;"></div> -->
+                                <!-- 11-99%使用status_medium -->
+                                <div class="bar_content status_medium" style="width:50%;"></div>
+                                <!-- 100%使用status_height -->
+                                <!-- <div class="bar_content status_height" style="width:100%;"></div> -->
+                            </div>
+                            <div class="bar_info">
+                                0.5G / 1G
+                                <span class="deadline">2020/05/24 23:59到期</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="menu_list">
+                        <li><a href="uploaded_file.html" class="btn">已上傳檔案</a></li>
+                        <li><a href="verification_file.html" class="btn">驗證檔案</a></li>
+                        <li><a href="verification_record.html" class="btn">驗證紀錄</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="setting.html">設定</a></li>
+                        <li><a href="change_password.html">重設密碼</a></li>
+                        <li><a href="account_level.html">升級 / 續用</a></li>
+                        <li><a href="reward_record.html">獎勵空間</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="" data-toggle="modal" data-target="#LogoutComfirm">登出</a></li>
+                    </ul>
+                </div>
+                <!--main_list 已登入時顯示-->
+                <div class="menu_bottom">
+                    <ul class="menu_list">
+                        <li><a href="privacy.html">隱私權政策</a></li>
+                        <li><a href="membership_term.html">會員條款</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li>
+                            <div class="option_item">
+                                <label class="item_title">顯示語系：</label>
+                                <div class="item_content">
+                                    <select name="" id="">
+                                        <option value="">中文(繁體)</option>
+                                        <option value="">英文</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="copyright">© 2019 BlockChain Security 區塊科技股份有限公司 版權所有</div>
+                </div>
+            </div>
+        </header>
+        <div class="main_content">
+            <div class="content_block">
+                <div class="container">
+                    <div class="block_top">
+                        <h2 class="pull-left">會員條款</h2>
+                    </div>
+                    <div class="block_content">
+                        <p>請詳閱以下條款內容以保障您的權益: 當您完成註冊程序成為會員,即代表您同意遵守經由本會員條款所規範之權利義務事項。</p>   
+                        <p>所謂會員條款,除本頁所載之內容外,尚包含以本公司名義或經授權而由其他第三人以本公司名義所公告、刊載,透過網站頁面、應用程式 APP 或其他書面通知所揭露,而涉及會員守則、使用規範以及其他經營管理事項等之網站政策與服務流程,基於保障公司經營與消費者權益之目的,本公司有權於任何時間修改與變更本條款之內容,並將不個別通知會員,建議會員定期查閱本服務條款。如會員於本條款修改與變更後仍繼續使用本服務,則視為會員已閱讀、瞭解與同意接受本條款修改或變更。本公司有權暫時或永久修改或中止提供本服務給您,您不得因此要求任何賠償。</p>
+                        <br>
+                        <h4>第一條 服務內容與項目</h4>
+                        <p>本公司提供使用者如下的服務項目:</p>
+                        <ul>
+                            <li style="list-style: decimal;list-style-position: inside;">提供使用者於區塊鏈存證王 APP之拍照、錄影、錄音、螢幕截圖或螢幕錄影服務。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">提供使用者檢視區塊鏈存證王APP內連動之帳戶相關資訊。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">提供使用者將所選取資料之數位指紋上傳至區塊鏈。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">提供使用者驗證數位指紋的服務。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">提供使用者登入使用區塊科技存證服務相關應用(不包含eDetector及教育訓練課程)。</li>
+                        </ul>
+                        <p>本網站及 APP 僅協助確認證據或智財之數位指紋正確性及驗證區塊鏈上傳時間,實際蒐證或檔案建立等其他於本網站中顯示之時間,因使用者時區之設置,而造成時差問題,或因網路狀況及其他因素限制,而處生之時間差異,並不在本網站之可確認範圍內。</p>
+                        <br>
+                        <h4>第二條 會員守則</h4>
+                        <p>會員資格應遵守下列規定:</p>
+                        <ul>
+                            <li style="list-style: decimal;list-style-position: inside;">會員應確保註冊帳號其個人資料之真實性與完整性,並應依本公司之請求適時更新。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">會員應定期檢閱本公司有關服務流程與政策內容之更新公告,並應定期連線、使用服務項目。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">會員對於本網站所寄送之一切通知,應儘速查閱。如遇帳戶非本人使用或經他人竄改資料等資訊安全之異常通知,應配合本公司協助處理。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">本網站所提供之會員帳號,僅限個人使用,會員不得以任何有償、無償等方式,將帳號提供於第三人使用。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">會員應維護服務項目之正常運作,不得以機器人帳戶或其他技術方法透過其他不正方法竊取、變更、刪除服務項目之程式碼;</li>
+                            <li style="list-style: decimal;list-style-position: inside;">會員亦不得以利益交換、威脅恐嚇或其他相類似之不正方式,影響其他會員之使用。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">會員不得在未經該他人同意之情況下，藉由服務項目設計存在之漏洞，或以越過、破壞安全維護機制等其他技術方法，變更、刪除或蒐集他人之個人資料。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">會員應依誠實信用原則遵守服務條款之規範，並應遵守用戶端當地法令，不得有損及本公司、其他會員或第三人權益之行為。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">會員若使用不當信箱或本公司發現註冊之信箱不再有效，將先以Email或手機通知，並於通知後一個月，刪除檔案並清理帳戶，會員可來信或以其他方式確認通知本公司，以證明會員註冊使用之帳戶非無效信箱。</li>
+                        </ul>
+                        <br>
+                        <h4>第三條 責任範圍與排除</h4>
+                        <p>會員知悉並同意，因下述因素所導致無法正常使用本平台應用所造成之損失不在本公司賠償範圍:</p>
+                        <ul>
+                            <li style="list-style: decimal;list-style-position: inside;">應用端作業系統之更新或異常。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">系統或伺服器進行更新或調整。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">用戶端應用版本未更新至最新。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">用戶端作業系統、瀏覽器或相關連動之應用版本不相符或運行不正常以及網路未正常連線。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">用戶端系統環境不安全，具Root或JB權限、於虛擬模擬器執行等，包含但不限以上不安全之環境與權限。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">對本服務相關軟硬體設備進行更換、升級、保養或施工時。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">發生突發性之電子通信設備故障時。</li>
+                            <li style="list-style: decimal;list-style-position: inside;">天災或其他不可抗力之因素。</li>
+                        </ul>
+                        <p>本公司對於使用者在使用本服務或使用本服務所致生之任何直接、間接、衍生之財產或非財產之損害，不負賠償責任。</p>
+                        <p>本公司對使用本服務之用途或所產生的結果，不負任何保證責任，亦不保證與本服務相關之軟體無缺失或會予以修正。</p>
+                        <p>本公司無須對發生於本服務或透過本服務所涉及之任何恐嚇、誹謗、淫穢或其他一切不法行為對您或任何人負責。</p>
+                        <p>本公司對於使用者於使用本服務所蒐證與保存之數位證據，本公司善盡資訊安全保護之責，但因資訊安全保護並無法全面且完全的防禦，本公司對於使用本服務時所涉及之資訊安全危害所致生之任何直接、間接、衍生之財產或非財產之損害，不負賠償責任，亦不負任何保證責任。</p>
+                        <br>
+                        <h4>第四條 效力與終止</h4>
+                        <p>會員使用本服務之行為若有任何違反法令或本使用條款或危害本網站或第三者權益之虞時，本公司有權不經告知您，立即暫時或永久終止您使用本服務之授權。</p>
+                        <p>本條款終止之效力，不影響終止日前已生之權利義務關係，亦不影響任一方得向他方主張的法律上權利，亦不及於其他與個人資料蒐集、處理、利用的相關條款。</p>
+                        <br>
+                        <h4>第五條 智慧財產權之歸屬與保護</h4>
+                        <p>會員於註冊程序完成後，視為已授權本公司就其該會員於使用服務項目之過程中所提供或上傳驗證之各式內容，除經會員書面同意外，本公司不得將上述之內容 提供給非上述之其他第三人使用。</p>
+                        <p>本服務所使用之軟體、程式及網站上所有內容，包括但不限於著作、圖片、檔案、 資訊、資料、網站架構、網頁設計，均由本應用程式或其他權利人依法擁有其智 慧財產權，包括但不限於商標權、專利權、著作權、營業秘密與專有技術等。 任何人不得逕行使用、修改、重製、公開播送、改作、散布、發行、公開發表、 進行還原工程、解編或反向組譯。如欲引用或轉載前述之軟體、程式或應用程式 內容，必須依法取得本網站或其他權利人的事前書面同意。如有違反之情事，您應對本網站或其他權利人負損害賠償責任(包括但不限於訴訟費用及律師費用等)。</p>
+                        <br>
+                        <h4>第六條 會員條款之爭議與疑義處理</h4>
+                        <p>對於本條款所述之規範事項存有疑義，會員應以書面來函或其他經本公司指定之方式提出，本公司對於未依約定要式提出之問題，有權拒絕回覆。</p>
+                        <p>對於本條款所生之爭議，應以中華民國法令作為判斷準據。就本公司與會員間因服務項目所生之權利義務爭議，會員同意應先向本公司提出解決之請求，進行協商。若協商未果，雙方同意以台灣台北地方法院作為第一審管轄法院。</p>
+                        <p>會員知悉並同意，本公司保有不定期更新、修改與補充會員條款之權利，該等更新、修改與補充。</p>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .main_content : END -->
+        <footer class="hidden-xs hidden-sm">
+            <div class="container-fluid">
+                <ul class="link_list">
+                    <li><a href="privacy.html">隱私權政策</a></li>
+                    <li><a href="membership_term.html">會員條款</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li>
+                        <div class="option_item">
+                            <label class="item_title">顯示語系：</label>
+                            <div class="item_content">
+                                <select name="" id="">
+                                    <option value="">中文(繁體)</option>
+                                    <option value="">英文</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="copyright">© 2019 BlockChain Security 區塊科技股份有限公司 版權所有</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

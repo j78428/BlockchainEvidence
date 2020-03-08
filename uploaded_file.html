@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icon/web-ico.png">
+    <meta name=”description” content="讓行動裝置蒐集證據更方便、更快速，區塊鏈技術讓數位證據更可靠。">
+    <title>區塊鏈存證王 Blockchain Witness</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/slider_style.css" rel="stylesheet">
+    <script src="script/jquery-1.10.2.min.js"></script>
+    <script src="script/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/jquery.ui.touch-punch.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/main.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container-fluid">
+                <a href="index.html" class="brand_logo pull-left"></a>
+                <button type="button" class="btn btn_style3 btn_menu visible-xs">
+                    <div class="icon_menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                </button>
+                <ul class="nav_list pull-left hidden-xs" style="display:none;">
+                    <!-- 登入後隱藏 -->
+                    <li><a href="intro_page_browser_kit.html" class="btn">瀏覽器套件</a></li>
+                    <li><a href="intro_page_app.html" class="btn">APP</a></li>
+                    <li><a href="download.html" class="btn">下載</a></li>
+                    <li><a href="block_chain_view.html" class="btn">區塊鏈即時數據</a></li>
+                </ul>
+                <ul class="nav_list pull-left hidden-xs">
+                    <!-- 登入後才顯示 -->
+                    <li><a href="uploaded_file.html" class="btn nav_active">已上傳檔案</a></li>
+                    <li><a href="verification_file.html" class="btn">驗證檔案</a></li>
+                    <li><a href="verification_record.html" class="btn">驗證紀錄</a></li>
+                </ul>
+                <ul class="nav_list pull-right hidden-xs" style="display:none;">
+                    <!-- 登入後隱藏 -->
+                    <li><a href="registered.html" class="btn">註冊</a></li>
+                    <li><a href="login.html" class="btn">登入</a></li>
+                </ul>
+                <ul class="nav_list pull-right hidden-xs">
+                    <!-- 登入後才顯示 -->
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">王大明 <span class="caret"></span></button>
+                            <ul class="dropdown-menu account_menu" role="menu">
+                                <li>
+                                    <div class="storage_status_box">
+                                        <div class="box_title">
+                                            空間使用度：50%
+                                            <div class="member_level level_free pull-right">FREE</div>
+                                            <!-- 以下為其他用戶等級樣式 -->
+                                            <!-- <div class="member_level level_standard">STANDARD</div>
+                                            <div class="member_level level_pro">PRO</div> -->
+                                        </div>
+                                        <div class="box_content">
+                                            <div class="status_bar">
+                                                <!-- 10%以下使用status_low -->
+                                                <!-- <div class="bar_content status_low" style="width:10%;"></div> -->
+                                                <!-- 11-99%使用status_medium -->
+                                                <div class="bar_content status_medium" style="width:50%;"></div>
+                                                <!-- 100%使用status_height -->
+                                                <!-- <div class="bar_content status_height" style="width:100%;"></div> -->
+                                            </div>
+                                            <div class="bar_info">
+                                                0.5G / 1G
+                                                <span class="deadline">2020/05/24 23:59到期</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="setting.html">設定</a></li>
+                                <li><a href="change_password.html">重設密碼</a></li>
+                                <li><a href="account_level.html">升級 / 續用</a></li>
+                                <li><a href="reward_record.html">獎勵空間</a></li>
+                                <li><a href="" data-toggle="modal" data-target="#LogoutComfirm">登出</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobile menu -->
+            <div class="menu visible-xs">
+                <div class="menu_top">
+                    <div class="login_title">Hi, 王大明</div>
+                    <!--login_title 已登入才顯示-->
+                    <button type="button" class="btn btn_style3 btn_close_menu"><span class="glyphicon glyphicon-chevron-right"></span></button>
+                </div>
+                <div class="menu_content" style="display:none">
+                    <ul class="menu_list">
+                        <li><a href="registered.html">註冊</a></li>
+                        <li><a href="login.html">登入</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="intro_page_browser_kit.html">瀏覽器套件</a></li>
+                        <li><a href="intro_page_app.html">APP</a></li>
+                        <li><a href="download.html">下載</a></li>
+                        <li><a href="block_chain_view.html">區塊鏈即時數據</a></li>
+                    </ul>
+                </div>
+                <!--main_list 未登入時顯示-->
+                <div class="menu_content">
+                    <div class="storage_status_box">
+                        <div class="box_title">
+                            空間使用度：50%
+                            <div class="member_level level_free pull-right">FREE</div>
+                            <!-- 以下為其他用戶等級樣式 -->
+                            <!-- <div class="member_level level_standard">STANDARD</div>
+                            <div class="member_level level_pro">PRO</div> -->
+                        </div>
+                        <div class="box_content">
+                            <div class="status_bar">
+                                <!-- 10%以下使用status_low -->
+                                <!-- <div class="bar_content status_low" style="width:10%;"></div> -->
+                                <!-- 11-99%使用status_medium -->
+                                <div class="bar_content status_medium" style="width:50%;"></div>
+                                <!-- 100%使用status_height -->
+                                <!-- <div class="bar_content status_height" style="width:100%;"></div> -->
+                            </div>
+                            <div class="bar_info">
+                                0.5G / 1G
+                                <span class="deadline">2020/05/24 23:59到期</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="menu_list">
+                        <li><a href="uploaded_file.html" class="btn">已上傳檔案</a></li>
+                        <li><a href="verification_file.html" class="btn">驗證檔案</a></li>
+                        <li><a href="verification_record.html" class="btn">驗證紀錄</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="setting.html">設定</a></li>
+                        <li><a href="change_password.html">重設密碼</a></li>
+                        <li><a href="account_level.html">升級 / 續用</a></li>
+                        <li><a href="reward_record.html">獎勵空間</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="" data-toggle="modal" data-target="#LogoutComfirm">登出</a></li>
+                    </ul>
+                </div>
+                <!--main_list 已登入時顯示-->
+                <div class="menu_bottom">
+                    <ul class="menu_list">
+                        <li><a href="privacy.html">隱私權政策</a></li>
+                        <li><a href="membership_term.html">會員條款</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li>
+                            <div class="option_item">
+                                <label class="item_title">顯示語系：</label>
+                                <div class="item_content">
+                                    <select name="" id="">
+                                        <option value="">中文(繁體)</option>
+                                        <option value="">英文</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="copyright">© 2019 BlockChain Security 區塊科技股份有限公司 版權所有</div>
+                </div>
+            </div>
+        </header>
+        <div class="main_content">
+            <div class="content_block">
+                <div class="container">
+                    <div class="block_top">
+                        <h2 class="pull-left">已上傳檔案</h2>
+                        <a href="verification_file_no_file.html" class="btn btn_style2 btn-lg pull-right">驗證檔案</a>
+                    </div>
+                    <div class="block_content">
+                        <div class="notice_message" style="display:none;">尚未上傳任何檔案</div>
+                        <div class="sort_bar hidden-xs">
+                            <div class="sort_item">
+                                <div class="item_title">檔案類型：</div>
+                                <div class="item_content">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">全部</option>
+                                        <option value="">影像</option>
+                                        <option value="">影片</option>
+                                        <option value="">音訊</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sort_item">
+                                <div class="item_title">上傳方式：</div>
+                                <div class="item_content">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">不限</option>
+                                        <option value="">瀏覽器套件</option>
+                                        <option value="">APP</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_table upload_file_list">
+                            <div class="table_head hidden-xs">
+                                <table>
+                                    <tr>
+                                        <th>圖示</th>
+                                        <th>名稱</th>
+                                        <th class="hidden-xs hidden-sm">檔案類型</th>
+                                        <th class="hidden-xs hidden-sm">檔案大小</th>
+                                        <th>上傳時間/方式</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="table_body">
+                                <p class="no_result" style="display: none;">尚未有任何內容</p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="file_img" style="background-image: url(images/demo_img.jpg);"></div>
+                                        </td>
+                                        <td>image_item.jpg</td>
+                                        <td class="hidden-xs hidden-sm">jpg</td>
+                                        <td class="hidden-xs hidden-sm">192KB</td>
+                                        <td class="hidden-xs">2018/01/01 19:10:02<div class="sub_text">經瀏覽器套件上傳</div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn_style2 btn-sm hidden-xs" data-toggle="modal" data-target="#ImageFileDetail">檢視</button>
+                                            <button class="btn btn_style2 btn-sm hidden-xs" data-toggle="modal" data-target="#EditMemo">編輯註記</button>
+                                            <div class="btn-group hidden-xs">
+                                                <button type="button" class="btn btn_style2 btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="">下載</a></li>
+                                                    <li><a href="" data-toggle="modal" data-target="#DoubleComfirm">刪除</a></li>
+                                                </ul>
+                                            </div> 
+                                            <div class="btn-group dropup visible-xs">
+                                                <button type="button" class="btn btn_style3 btn-lg btn_show_function"><span class="glyphicon glyphicon-option-vertical"></span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="file_img" style="background-image: url(images/demo_img2.jpg);"></div>
+                                        </td>
+                                        <td>video_item.mp4<div class="sub_text">街道監視器影像</div>
+                                        </td>
+                                        <td class="hidden-xs hidden-sm">mp4</td>
+                                        <td class="hidden-xs hidden-sm">192KB</td>
+                                        <td class="hidden-xs">2018/01/01 19:10:02<div class="sub_text">經瀏覽器套件上傳</div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn_style2 btn-sm hidden-xs" data-toggle="modal" data-target="#VideoFileDetail">檢視</button>
+                                            <button class="btn btn_style2 btn-sm hidden-xs" data-toggle="modal" data-target="#EditMemo">編輯註記</button>
+                                            <div class="btn-group hidden-xs">
+                                                <button type="button" class="btn btn_style2 btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="">下載</a></li>
+                                                    <li><a href="" data-toggle="modal" data-target="#DoubleComfirm">刪除</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group dropup visible-xs">
+                                                <button type="button" class="btn btn_style3 btn-lg btn_show_function"><span class="glyphicon glyphicon-option-vertical"></span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="file_img icon_audio_file" style=""></div>
+                                        </td>
+                                        <td>audio_item.wav<div class="sub_text">街道監視器影像</div>
+                                        </td>
+                                        <td class="hidden-xs hidden-sm">wav</td>
+                                        <td class="hidden-xs hidden-sm">192KB</td>
+                                        <td class="hidden-xs">2018/01/01 19:10:02<div class="sub_text">經APP上傳</div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn_style2 btn-sm hidden-xs" data-toggle="modal" data-target="#AudioFileDetail">檢視</button>
+                                            <button class="btn btn_style2 btn-sm hidden-xs" data-toggle="modal" data-target="#EditMemo">編輯註記</button>
+                                            <div class="btn-group hidden-xs">
+                                                <button type="button" class="btn btn_style2 btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal"></span></button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="">下載</a></li>
+                                                    <li><a href="" data-toggle="modal" data-target="#DoubleComfirm">刪除</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group dropup visible-xs">
+                                                <button type="button" class="btn btn_style3 btn-lg btn_show_function"><span class="glyphicon glyphicon-option-vertical"></span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="table_bottom">
+                                <div class="pagination_box">
+                                    <div class="total">總共36筆資料</div>
+                                    <button class="btn btn_style1" disabled="">上一頁</button>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                    </select>
+                                    <button class="btn btn_style1">下一頁</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .list_table : END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .main_content : END -->
+        <footer class="hidden-xs hidden-sm">
+            <div class="container-fluid">
+                <ul class="link_list">
+                    <li><a href="privacy.html">隱私權政策</a></li>
+                    <li><a href="membership_term.html">會員條款</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li>
+                        <div class="option_item">
+                            <label class="item_title">顯示語系：</label>
+                            <div class="item_content">
+                                <select name="" id="">
+                                    <option value="">中文(繁體)</option>
+                                    <option value="">英文</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="copyright">© 2019 BlockChain Security 區塊科技股份有限公司 版權所有</div>
+            </div>
+        </footer>
+        <div class="modal web_modal intro_modal fade" id="ImageFileDetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="view_block">
+                            <img src="images/demo_img.jpg" alt="">
+                        </div>
+                        <div class="info_block">
+                            <div class="col-sm-7 col-md-8">
+                                <div class="file_title">image_item.jpg</div>
+                                <div class="file_memo">街道監視器影像</div>
+                                <button class="btn btn_style2 btn-sm btn_edit_memo" data-toggle="modal" data-target="#EditMemo">編輯</button>
+                            </div>
+                            <div class="col-sm-5 col-md-4">
+                                <div class="info_list">
+                                    <div class="info_item">
+                                        <div class="info_title">檔案大小：</div>
+                                        <div class="info_content">192KB</div>
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">檔案類型：</div>
+                                        <div class="info_content">jpg</div>
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">上傳時間：</div>
+                                        <div class="info_content">2018/01/01 19:10:02</div>
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">上傳方式：</div>
+                                        <div class="info_content">瀏覽器套件</div>
+                                    </div>
+                                </div>
+                                <div class="btn_group">
+                                    <button class="btn btn_style1 btn-sm">下載</button>
+                                    <button class="btn btn_style1 btn-sm" data-toggle="modal" data-target="#DoubleComfirm">刪除</button>
+                                    <button class="btn btn_style4 btn-sm visible-xs" data-dismiss="modal">關閉</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .modal-content : END -->
+            </div>
+        </div>
+        <!-- #ImageFileDetail : END -->
+        <div class="modal web_modal intro_modal fade" id="VideoFileDetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="view_block">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video controls>
+                                    <source src="http://www.wibibi.com/video/test.mp4" type="video/mp4">
+                                    您的瀏覽器不支援此 HTML5 影片標籤
+                                </video>
+                            </div>
+                        </div>
+                        <div class="info_block">
+                            <div class="col-sm-7 col-md-8">
+                                <div class="file_title">video_item.mp4</div>
+                                <div class="file_memo">街道監視器影像</div>
+                                <button class="btn btn_style2 btn-sm btn_edit_memo" data-toggle="modal" data-target="#EditMemo">編輯</button>
+                            </div>
+                            <div class="col-sm-5 col-md-4">
+                                <div class="info_list">
+                                    <div class="info_item">
+                                        <div class="info_title">檔案大小：</div>
+                                        <div class="info_content">192KB</div>
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">檔案類型：</div>
+                                        <div class="info_content">mp4</div>
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">上傳時間：</div>
+                                        <div class="info_content">2018/01/01 19:10:02</div>
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">上傳方式：</div>
+                                        <div class="info_content">瀏覽器套件</div>
+                                    </div>
+                                </div>
+                                <div class="btn_group">
+                                    <button class="btn btn_style1 btn-sm">下載</button>
+                                    <button class="btn btn_style1 btn-sm" data-toggle="modal" data-target="#DoubleComfirm">刪除</button>
+                                    <button class="btn btn_style4 btn-sm visible-xs" data-dismiss="modal">關閉</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .modal-content : END -->
+            </div>
+        </div>
+        <!-- #VideoFileDetail : END -->
+        <div class="modal web_modal intro_modal fade" id="AudioFileDetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="view_block">
+                            <audio controls>
+                                <source src="http://bbcsfx.acropolis.org.uk/assets/07076051.wav" type="audio/wav">
+                                您的瀏覽器不支援此 HTML5 影音標籤
+                            </audio>
+                        </div>
+                        <div class="info_block">
+                            <div class="col-sm-7 col-md-8">
+                                <div class="file_title">audio_item.wav</div>
+                                <div class="file_memo">街道監視器影像</div>
+                                <button class="btn btn_style2 btn-sm btn_edit_memo" data-toggle="modal" data-target="#EditMemo">編輯</button>
+                            </div>
+                            <div class="col-sm-5 col-md-4">
+                                <div class="info_list">
+                                    <div class="info_item">
+                                        <div class="info_title">檔案大小：</div>
+                                        <div class="info_content">192KB</div>
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">檔案類型：</div>
+                                        <div class="info_content">wav</div>
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">上傳時間：</div>
+                                        <div class="info_content">2018/01/01 19:10:02</div>
+                                    </div>
+                                    <div class="info_item">
+                                        <div class="info_title">上傳方式：</div>
+                                        <div class="info_content">瀏覽器套件</div>
+                                    </div>
+                                </div>
+                                <div class="btn_group">
+                                    <button class="btn btn_style1 btn-sm">下載</button>
+                                    <button class="btn btn_style1 btn-sm" data-toggle="modal" data-target="#DoubleComfirm">刪除</button>
+                                    <button class="btn btn_style4 btn-sm visible-xs" data-dismiss="modal">關閉</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .modal-content : END -->
+            </div>
+        </div>
+        <!-- #AudioFileDetail : END -->
+        
+        <div class="modal web_modal fade" id="EditMemo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal_mask"></div>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
+                        <h3 class="modal-title">編輯註記</h3>
+                    </div>
+                    <div class="modal-body">
+                        <textarea name="" id="" class="form-control" rows="3" placeholder="請輸入註記內容"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn_style4" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn_style1" data-dismiss="modal">儲存</button>
+                    </div>
+                </div>
+                <!-- .modal-content : END -->
+            </div>
+        </div>
+        <!-- #EditMemo : END -->
+        
+        <div class="modal alert_modal fade" id="DoubleComfirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal_mask"></div>
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                        <p>確認要刪除檔案？</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn_style4" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn_style5" data-dismiss="modal" data-toggle="modal" data-target="#VerificationSuccess">刪除</button>
+                    </div>
+                </div>
+                <!-- .modal-content : END -->
+            </div>
+        </div>
+        <!-- #DoubleComfirm : END -->
+        <div class="modal alert_modal fade" id="LogoutComfirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal_mask"></div>
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    </div>
+                    <div class="modal-body">
+                        <p>確認要登出？</p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn_group one_two">
+                            <button type="button" class="btn btn_style4" data-dismiss="modal">取消</button>
+                            <a class="btn btn_style1" href="index.html">確認</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .modal-content : END -->
+            </div>
+        </div>
+        <!-- #LogoutComfirm : END -->
+        <!-- 列表項目操作modal -->
+        <div class="function_modal">
+            <div class="modal_mask"></div>
+            <div class="modal_content">
+                <ul class="item_list">
+                    <li><a href="" class="btn_item_function" data-toggle="modal" data-target="#ImageFileDetail">檢視</a></li>
+                    <li><a href="" class="btn_item_function" data-toggle="modal" data-target="#EditMemo">編輯註記</a></li>
+                    <li><a href="" class="btn_item_function">下載</a></li>
+                    <li><a href="" class="btn_item_function" data-toggle="modal" data-target="#DoubleComfirm">刪除</a></li>
+                    <li><a href="javascript: void(0);" class="btn_close_function">取消</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 列表項目操作modal : END -->
+    </div>
+</body>
+
+</html>

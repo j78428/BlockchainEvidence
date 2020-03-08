@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icon/web-ico.png">
+    <meta name=”description” content="讓行動裝置蒐集證據更方便、更快速，區塊鏈技術讓數位證據更可靠。">
+    <title>區塊鏈存證王 Blockchain Witness</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/slider_style.css" rel="stylesheet">
+    <script src="script/jquery-1.10.2.min.js"></script>
+    <script src="script/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/jquery.ui.touch-punch.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/main.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container-fluid">
+                <a href="index.html" class="brand_logo pull-left"></a>
+                <button type="button" class="btn btn_style3 btn_menu visible-xs">
+                    <div class="icon_menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                </button>
+                <ul class="nav_list pull-left hidden-xs" style="display:none;">
+                    <!-- 登入後隱藏 -->
+                    <li><a href="intro_page_app.html" class="btn">個人版</a></li>
+                    <li><a href="intro_page_browser_kit.html" class="btn">企業版</a></li>
+                    <li><a href="download.html" class="btn">下載</a></li>
+                    <li><a href="block_chain_view.html" class="btn">區塊鏈即時數據</a></li>
+                </ul>
+                <ul class="nav_list pull-left hidden-xs">
+                    <!-- 登入後才顯示 -->
+                    <li><a href="uploaded_file.html" class="btn">已上傳檔案</a></li>
+                    <li><a href="verification_file.html" class="btn">驗證檔案</a></li>
+                    <li><a href="verification_record.html" class="btn">驗證紀錄</a></li>
+                </ul>
+                <ul class="nav_list pull-right hidden-xs" style="display:none;">
+                    <!-- 登入後隱藏 -->
+                    <li><a href="registered.html" class="btn">個人註冊</a></li>
+                    <li><a href="business_application_step1.html" class="btn">企業申請</a></li>
+                    <li><a href="login.html" class="btn">登入</a></li>
+                </ul>
+                <ul class="nav_list pull-right hidden-xs">
+                    <!-- 登入後才顯示 -->
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">王大明 <span class="caret"></span></button>
+                            <ul class="dropdown-menu account_menu" role="menu">
+                                <li>
+                                    <div class="storage_status_box">
+                                        <div class="box_title">
+                                            空間使用度：50%
+                                            <div class="member_level level_free pull-right">FREE</div>
+                                            <!-- 以下為其他用戶等級樣式 -->
+                                            <!-- <div class="member_level level_standard">STANDARD</div>
+                                            <div class="member_level level_pro">PRO</div> -->
+                                        </div>
+                                        <div class="box_content">
+                                            <div class="status_bar">
+                                                <!-- 10%以下使用status_low -->
+                                                <!-- <div class="bar_content status_low" style="width:10%;"></div> -->
+                                                <!-- 11-99%使用status_medium -->
+                                                <div class="bar_content status_medium" style="width:50%;"></div>
+                                                <!-- 100%使用status_height -->
+                                                <!-- <div class="bar_content status_height" style="width:100%;"></div> -->
+                                            </div>
+                                            <div class="bar_info">
+                                                0.5G / 1G
+                                                <span class="deadline">2020/05/24 23:59到期</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="setting.html">設定</a></li>
+                                <li><a href="change_password.html">重設密碼</a></li>
+                                <li><a href="account_level.html">升級 / 續用</a></li>
+                                <li><a href="reward_record.html">獎勵空間</a></li>
+                                <li><a href="" data-toggle="modal" data-target="#LogoutComfirm">登出</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobile menu -->
+            <div class="menu visible-xs">
+                <div class="menu_top">
+                    <div class="login_title">Hi, 王大明</div>
+                    <!--login_title 已登入才顯示-->
+                    <button type="button" class="btn btn_style3 btn_close_menu"><span class="glyphicon glyphicon-chevron-right"></span></button>
+                </div>
+                <div class="menu_content" style="display:none">
+                    <ul class="menu_list">
+                        <li><a href="login.html">登入</a></li>
+                        <li><a href="registered.html">個人註冊</a></li>
+                        <li><a href="business_application_step1.html">企業申請</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="intro_page_app.html">個人版</a></li>
+                        <li><a href="intro_page_browser_kit.html">企業版</a></li>
+                        <li><a href="download.html">下載</a></li>
+                        <li><a href="block_chain_view.html">區塊鏈即時數據</a></li>
+                    </ul>
+                </div>
+                <!--main_list 未登入時顯示-->
+                <div class="menu_content">
+                    <div class="storage_status_box">
+                        <div class="box_title">
+                            空間使用度：50%
+                            <div class="member_level level_free pull-right">FREE</div>
+                            <!-- 以下為其他用戶等級樣式 -->
+                            <!-- <div class="member_level level_standard">STANDARD</div>
+                            <div class="member_level level_pro">PRO</div> -->
+                        </div>
+                        <div class="box_content">
+                            <div class="status_bar">
+                                <!-- 10%以下使用status_low -->
+                                <!-- <div class="bar_content status_low" style="width:10%;"></div> -->
+                                <!-- 11-99%使用status_medium -->
+                                <div class="bar_content status_medium" style="width:50%;"></div>
+                                <!-- 100%使用status_height -->
+                                <!-- <div class="bar_content status_height" style="width:100%;"></div> -->
+                            </div>
+                            <div class="bar_info">
+                                0.5G / 1G
+                                <span class="deadline">2020/05/24 23:59到期</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="menu_list">
+                        <li><a href="uploaded_file.html" class="btn">已上傳檔案</a></li>
+                        <li><a href="verification_file.html" class="btn">驗證檔案</a></li>
+                        <li><a href="verification_record.html" class="btn">驗證紀錄</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="setting.html">設定</a></li>
+                        <li><a href="change_password.html">重設密碼</a></li>
+                        <li><a href="account_level.html">升級 / 續用</a></li>
+                        <li><a href="reward_record.html">獎勵空間</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="" data-toggle="modal" data-target="#LogoutComfirm">登出</a></li>
+                    </ul>
+                </div>
+                <!--main_list 已登入時顯示-->
+                <div class="menu_bottom">
+                    <ul class="menu_list">
+                        <li><a href="privacy.html">隱私權政策</a></li>
+                        <li><a href="membership_term.html">會員條款</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li>
+                            <div class="option_item">
+                                <label class="item_title">顯示語系：</label>
+                                <div class="item_content">
+                                    <select name="" id="">
+                                        <option value="">中文(繁體)</option>
+                                        <option value="">英文</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="copyright">© 2019 BlockChain Security 區塊科技股份有限公司 版權所有</div>
+                </div>
+            </div>
+        </header>
+        <div class="main_content">
+            <div class="content_block">
+                <div class="container">
+                    <div class="block_top">
+                        <h2 class="pull-left">關於我們</h2>
+                    </div>
+                    <div class="block_content">
+                        <h3>公司簡介</h3>
+                        <p>我們整合有關數位鑑識資安防禦及區塊鏈的最新應用，引進北歐的區塊鏈技術及Fintech等新科技，使金融機構和企業客戶可以快速地掌握資訊安全。</p>
+                        <br>
+                        <h3>公司宗旨</h3>
+                        <p>把有關資安及區塊鏈的研究加以整合。區塊鏈之資料不可否認及不可篡改等特性，結合數位鑑識證據保存及資安蒐證相呼應。</p>
+                        <br>
+                        <h3>團隊成員</h3>
+                        <p>組成自鑒真數位（iForensics）、雪橋（SnowBridge）與達文西個資暨高科技法律事務所（DaVinci Personal Data and High-Tech Law Firm）<p>
+                        <h4>「鑒真數位」</h4>
+                        <p>鑑識領域證照－CIFI、CHFI、ACE、CCE、ENCE等實務證照<br>資安領域證照－CISSP、CEH、ISO 17025實驗室認證</p>
+                        <p>鑒真數位在資安領域有超過10年以上的資歷，更在資策會擔任駭客攻防講師超過3年，熟知駭客攻防技巧。針對華文領域以Linux及Windows平台自行開發專業的數位鑑識工具軟體，擁有安全信賴之ISO17025認證專業商用數位鑑識實驗室。組合運用國際專業鑑識軟硬體及自行研發軟體解決客戶委鑑服務。
+開發「惡意程式偵測暨蒐證軟體eDetector，榮獲經濟部第24屆創新研究獎。</p>
+                        <br>
+                        <h4>「雪喬Snow Bridge」</h4>
+                        <p>北歐的金融科技創新在全球居於領先地位，雪喬股份有限公司致力把北歐已經成熟實現的應用方案介紹到台灣，透過和本地夥伴廠商的合作，讓金融機構和企業客戶可以更快速地應用新一代軟體技術。</p>
+                        <br>
+                        <h4>「達文西個資暨高科技法律事務所」</h4>
+                        <p>達文西成立的目的在於提供台灣所有產業因應個資法的最佳方案，並提供高科技法律領域的專業服務，從個人資料的利用、管理、個資安全政策，到數位證據的鑑識、蒐證，智慧財產權保護，營業秘密，政府事務公關等等，達文西都有信心達成客戶所託。</p>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .main_content : END -->
+        <footer class="hidden-xs hidden-sm">
+            <div class="container-fluid">
+                <ul class="link_list">
+                    <li><a href="privacy.html">隱私權政策</a></li>
+                    <li><a href="membership_term.html">會員條款</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li>
+                        <div class="option_item">
+                            <label class="item_title">顯示語系：</label>
+                            <div class="item_content">
+                                <select name="" id="">
+                                    <option value="">中文(繁體)</option>
+                                    <option value="">英文</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="copyright">© 2019 BlockChain Security 區塊科技股份有限公司 版權所有</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
